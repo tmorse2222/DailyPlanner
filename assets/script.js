@@ -1,4 +1,9 @@
 var currentDay = Date;
-$(`#currentDay`).ready(function(){
-    $(`#currentDay`).text(currentDay);
-});
+var dateDisplay = $(`#currentDay`);
+
+function time(){
+    dateDisplay.text(currentDay);
+}
+
+dateDisplay.ready(function(){
+    setInterval(`time()`, 1000)});
