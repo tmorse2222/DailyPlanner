@@ -77,4 +77,5 @@ body {
   }
   .container {
     width: 100%;
+    display: flow-root;
   }
