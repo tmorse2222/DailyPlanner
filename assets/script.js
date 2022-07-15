@@ -6,4 +6,4 @@ function time(){
 }
 
 dateDisplay.ready(function(){
-    setInterval(`time()`, 1000)});
+    setInterval(`time()`, 500)});
