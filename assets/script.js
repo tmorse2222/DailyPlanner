@@ -7,14 +7,14 @@ function time(){
     dateDisplay.text(Date);
 }
 function currentEvent(){
-
+    if (hour = 9){
+        $(`#9am`).addClass(`present`);
+    }
 }
 
 dateDisplay.ready(function(){
     setInterval(`time()`, 500)});
     
 timeBlock.ready(function(){
-    if (hour = 15){
-        $(`#3pm`).addClass(`present`);
     }
-})
+)
