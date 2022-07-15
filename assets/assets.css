@@ -26,8 +26,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     width: 70%;
-    background-color: gray;
-    padding-left: 5px;
+    padding-top: 5px;
   }
   
   .time-block{
@@ -42,8 +41,6 @@ body {
   }
   
   .hour {
-    background-color: #ffffff;
-    color: #000000;
     border-top: 1px dashed #000000;
   }
   
@@ -68,7 +65,7 @@ body {
     border-bottom-right-radius: 15px;
     background-color: #06AED5;
     color: white;
-    height: 64px;
+    height: 80px;
   }
   
   .saveBtn i:hover {
