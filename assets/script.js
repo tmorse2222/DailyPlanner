@@ -12,6 +12,7 @@ function currentEvent(){
 
 dateDisplay.ready(function(){
     setInterval(`time()`, 500)});
-timeBlock.ready(function(){
     
+timeBlock.ready(function(){
+
 })    
