@@ -1,7 +1,7 @@
 var currentDay = new Date;
 var dateDisplay = $(`#currentDay`);
 var hour = currentDay.getHours();
-var timeBlock = $(`.row`);
+var timeBlock = $(`.description`);
 var nine = $(`#9am`);
 var ten = $(`#10am`);
 var eleven = $(`#11am`);
@@ -134,3 +134,8 @@ setInterval(`time()`, 500);
     
 timeBlock.ready(currentEvent());
 setInterval(`currentEvent()`, 120000);
+
+timeBlock.click(function(event){
+    event.preventDefault;
+    $(this).html(`<form><label>Name: </label><input type="text" id="eventName"><br><label>Details: </label><input type="text" id="eventInfo">`);
+})
