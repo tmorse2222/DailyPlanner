@@ -129,7 +129,8 @@ function currentEvent(){
     }
 }
 
-dateDisplay.ready(function(){
-    setInterval(`time()`, 500)});
+dateDisplay.ready(time());
+setInterval(`time()`, 500);
     
 timeBlock.ready(currentEvent());
+setInterval(`currentEvent()`, 120000);
