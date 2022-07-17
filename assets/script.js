@@ -142,3 +142,7 @@ editBtn.click(function(event){
     $(this).css(`display`, `none`);
 })
 
+$(`.saveBtn`).click(function(event){
+    var name = $(this).parent().attr(`id`);
+    alert(name);
+})
