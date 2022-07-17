@@ -23,9 +23,9 @@ body {
   
   .description{
     white-space: pre-wrap;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 70%;
+    padding-left: 3px;
+    padding-right: 1px;
+    min-width: 50%;
     padding-top: 5px;
     background-color: transparent;
   }
@@ -42,6 +42,7 @@ body {
     height: 80px;
     border-top: 1px solid white;;
     width: 100%;
+    justify-content: space-evenly;
   }
   
   .hour {
@@ -66,9 +67,16 @@ body {
     border-right: 1px solid black;
     background-color: #06AED5;
     color: white;
-    height: 80px;
+    height: 100%;
+    display: none;
   }
-  
+  .editBtn {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background-color: #06AED5;
+    color: white;
+    height: 100%;
+  }
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;

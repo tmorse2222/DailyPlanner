@@ -136,6 +136,6 @@ timeBlock.ready(currentEvent());
 setInterval(`currentEvent()`, 120000);
 
 timeBlock.click(function(event){
-    event.preventDefault;
+    event.preventDefault();
     $(this).html(`<form><label>Name: </label><input type="text" id="eventName"><br><label>Details: </label><input type="text" id="eventInfo">`);
 })
