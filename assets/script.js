@@ -138,4 +138,7 @@ setInterval(`currentEvent()`, 120000);
 editBtn.click(function(event){
     event.preventDefault();
     $(this).parent().children(`p`).html(`<form><label>Name: </label><input type="text" id="eventName"><br><label>Details: </label><input type="text" id="eventInfo">`);
+    $(this).parent().children(`.saveBtn`).css(`display`, `unset`);
+    $(this).css(`display`, `none`);
 })
+
