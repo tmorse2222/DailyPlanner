@@ -29,10 +29,6 @@ body {
     padding-top: 5px;
     background-color: transparent;
   }
-  .description:hover {
-    border: 3px dashed #06AED5;
-    cursor: pointer;
-  }
   .time-block{
     text-align: center;
   }
