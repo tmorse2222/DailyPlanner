@@ -148,5 +148,7 @@ $(`.saveBtn`).click(function(event){
     var eventName = document.getElementById(`eventName${saveName}`).value;
     var eventInfo = document.getElementById(`eventInfo${saveName}`).value;
     var saveInfo = `${eventName}<br>${eventInfo}`;
-    alert(saveInfo);
+    localStorage.setItem(`${saveName}`, saveInfo);
+    var storedValue = localStorage.getItem(`${saveName}`);
+    $(this).parent().children(`p`).html(storedValue);
 })
