@@ -154,3 +154,9 @@ $(`.saveBtn`).click(function(event){
     $(this).parent().children(`.editBtn`).css(`display`, `unset`);
     $(this).css(`display`, `none`);
 })
+
+$(`.row`).each(function(event){
+    var eventName = $(this).attr(`id`);
+    var eventInfo = localStorage.getItem(`${eventName}`);
+    $(this).children(`p`).html(eventInfo);
+});
