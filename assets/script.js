@@ -169,7 +169,7 @@ $(`.saveBtn`).click(function(){
     var saveName = $(this).parent().attr(`id`);
     var eventName = document.getElementById(`eventName${saveName}`).value;
     var eventInfo = document.getElementById(`eventInfo${saveName}`).value;
-    var saveInfo = `${eventName}<br>${eventInfo}`;
+    var saveInfo = `<strong>${eventName}</strong><br>${eventInfo}`;
     localStorage.setItem(`${saveName}`, saveInfo);
     var storedValue = localStorage.getItem(`${saveName}`);
     $(this).parent().children(`p`).html(storedValue);

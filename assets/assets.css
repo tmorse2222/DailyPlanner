@@ -35,6 +35,7 @@ body {
     color: black;
     padding-right: 2px;
     border-right: 2px dashed black;
+    border-bottom: 2px dashed black;
   }
 
 /* Styles for event descriptions */
