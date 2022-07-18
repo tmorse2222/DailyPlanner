@@ -137,12 +137,14 @@ setInterval(`currentEvent()`, 120000);
 
 editBtn.click(function(event){
     event.preventDefault();
-    $(this).parent().children(`p`).html(`<form><label>Name: </label><input type="text" id="eventName"><br><label>Details: </label><input type="text" id="eventInfo">`);
+    var name = $(this).parent().attr(`id`);
+    $(this).parent().children(`p`).html(`<form><label>Name: </label><input type="text" id="eventName${name}" value=""><br><label>Details: </label><input type="text" id="eventInfo${name}" value="">`);
     $(this).parent().children(`.saveBtn`).css(`display`, `unset`);
     $(this).css(`display`, `none`);
 })
 
 $(`.saveBtn`).click(function(event){
     var name = $(this).parent().attr(`id`);
-    alert(name);
+    var eventName = document.getElementById(`eventName${name}`).value;
+    alert(eventName);
 })
