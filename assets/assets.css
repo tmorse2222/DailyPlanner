@@ -38,10 +38,10 @@ body {
     border-top: 1px solid white;;
     width: 100%;
     justify-content: space-evenly;
+    border-radius: 10%;
   }
   
   .hour {
-    border-top: 1px dashed #000000;
     color: #06AED5;
   }
   
@@ -65,6 +65,7 @@ body {
     max-height: 100%;
     min-height: 80px;
     display: none;
+    border-radius: 10%;
   }
   .editBtn {
     border-left: 1px solid black;
@@ -73,6 +74,7 @@ body {
     color: white;
     max-height: 100%;
     min-height: 80px;
+    border-radius: 10%;
   }
   .editBtn:hover {
     background-color: white;
