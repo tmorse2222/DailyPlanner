@@ -1,7 +1,12 @@
+// Global Variables
+// Variables for time
+
 var currentDay = new Date;
 var dateDisplay = $(`#currentDay`);
 var hour = currentDay.getHours();
-var editBtn = $(`.editBtn`);
+
+// Variables for time blocks
+
 var nine = $(`#9am`);
 var ten = $(`#10am`);
 var eleven = $(`#11am`);
@@ -12,9 +17,18 @@ var three = $(`#3pm`);
 var four = $(`#4pm`);
 var five = $(`#5pm`);
 
+// Variables for buttons
+
+var editBtn = $(`.editBtn`);
+
+// Function to display time
+
 function time(){
     dateDisplay.text(Date);
 }
+
+// Function to show time of day in relation to events
+
 function currentEvent(){
     if (hour < 9){
         nine.addClass(`future`);
@@ -127,23 +141,31 @@ function currentEvent(){
             four.addClass(`past`);
             five.addClass(`past`);
     }
-}
+};
+
+// Called Functions
+// Functions for time
 
 dateDisplay.ready(time());
 setInterval(`time()`, 500);
     
+// Functions for time of day
+
 nine.ready(currentEvent());
 setInterval(`currentEvent()`, 120000);
 
-editBtn.click(function(event){
-    event.preventDefault();
+// Function for inputs and buttons
+
+editBtn.click(function (){
     var name = $(this).parent().attr(`id`);
     $(this).parent().children(`p`).html(`<form><label>Name: </label><input type="text" id="eventName${name}" value=""><br><label>Details: </label><input type="text" id="eventInfo${name}" value="">`);
     $(this).parent().children(`.saveBtn`).css(`display`, `unset`);
     $(this).css(`display`, `none`);
-})
+});
 
-$(`.saveBtn`).click(function(event){
+// Functions to save input and buttons
+
+$(`.saveBtn`).click(function(){
     var saveName = $(this).parent().attr(`id`);
     var eventName = document.getElementById(`eventName${saveName}`).value;
     var eventInfo = document.getElementById(`eventInfo${saveName}`).value;
@@ -155,7 +177,9 @@ $(`.saveBtn`).click(function(event){
     $(this).css(`display`, `none`);
 })
 
-$(`.row`).each(function(event){
+// Function to pull any saved data from local storage and display it in proper timeblock
+
+$(`.row`).each(function(){
     var eventName = $(this).attr(`id`);
     var eventInfo = localStorage.getItem(`${eventName}`);
     $(this).children(`p`).html(eventInfo);
