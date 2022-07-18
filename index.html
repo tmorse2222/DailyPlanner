@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Provided Style Sheet links -->
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -18,75 +21,103 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Local Style sheet -->
+
     <link rel="stylesheet" href="assets/assets.css" />
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
+
+    <!-- Provided Header -->
+
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+
+      <!-- Line where current date/time are displayed -->
+
       <p id="currentDay" class="lead"></p>
     </header>
+
+    <!-- Section for time blocks -->
+
     <section class="container">
+
       <div id="9am" class="row" data-value="9">
         <h2 class="hour">  9am</h2>
         <p class="description time-block">Sample text</p>
         <button class="editBtn">Add/Edit</button>
         <button class="saveBtn">Save</button>
       </div>
+
       <div id="10am" class="row" data-value="10">
         <h2 class="hour">10am</h2>
         <p class="description time-block">Sample text</p>
         <button class="editBtn">Add/Edit</button>
         <button class="saveBtn">Save</button>
       </div>
+
       <div id="11am" class="row" data-value="11">
         <h2 class="hour">11am</h2>
         <p class="description time-block">Sample text</p>
         <button class="editBtn">Add/Edit</button>
         <button class="saveBtn">Save</button>
       </div>
+
       <div id="12pm" class="row" data-value="12">
         <h2 class="hour">12pm</h2>
         <p class="description time-block">Sample text</p>
         <button class="editBtn">Add/Edit</button>
         <button class="saveBtn">Save</button>
       </div>
+
       <div id="1pm" class="row" data-value="13">
         <h2 class="hour">  1pm</h2>
         <p class="description time-block">Sample text</p>
         <button class="editBtn">Add/Edit</button>
         <button class="saveBtn">Save</button>
       </div>
+
       <div id="2pm" class="row" data-value="14">
         <h2 class="hour">  2pm</h2>
         <p class="description time-block">Sample text</p>
         <button class="editBtn">Add/Edit</button>
         <button class="saveBtn">Save</button>
       </div>
+
       <div id="3pm" class="row" data-value="15">
         <h2 class="hour">  3pm</h2>
         <p class="description time-block">Sample text</p>
         <button class="editBtn">Add/Edit</button>
         <button class="saveBtn">Save</button>
       </div>
+
       <div id="4pm" class="row" data-value="16">
         <h2 class="hour">  4pm</h2>
         <p class="description time-block">Sample text</p>
         <button class="editBtn">Add/Edit</button>
         <button class="saveBtn">Save</button>
       </div>
+
       <div id="5pm" class="row" data-value="17">
         <h2 class="hour">  5pm</h2>
         <p class="description time-block">Sample text</p>
         <button class="editBtn">Add/Edit</button>
         <button class="saveBtn">Save</button>
       </div>
+
     </section>
+
+<!--Links to Jquery/moment.js  -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+<!-- Link to local JS -->
+
     <script src="assets/script.js"></script>
+
   </body>
   </html>
