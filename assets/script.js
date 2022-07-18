@@ -151,4 +151,6 @@ $(`.saveBtn`).click(function(event){
     localStorage.setItem(`${saveName}`, saveInfo);
     var storedValue = localStorage.getItem(`${saveName}`);
     $(this).parent().children(`p`).html(storedValue);
+    $(this).parent().children(`.editBtn`).css(`display`, `unset`);
+    $(this).css(`display`, `none`);
 })
