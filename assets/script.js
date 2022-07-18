@@ -144,8 +144,9 @@ editBtn.click(function(event){
 })
 
 $(`.saveBtn`).click(function(event){
-    var name = $(this).parent().attr(`id`);
-    var eventName = document.getElementById(`eventName${name}`).value;
-    var eventInfo = document.getElementById(`eventInfo${name}`).value;
-    alert(eventInfo);
+    var saveName = $(this).parent().attr(`id`);
+    var eventName = document.getElementById(`eventName${saveName}`).value;
+    var eventInfo = document.getElementById(`eventInfo${saveName}`).value;
+    var saveInfo = `${eventName}<br>${eventInfo}`;
+    alert(saveInfo);
 })
